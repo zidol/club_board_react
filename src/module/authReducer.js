@@ -4,7 +4,7 @@ import * as types from './actionType';
 import {signinAPI} from '../infra/firebase/api'
 
                                     //type      //promise api => infra에서 가져옴
-export const signin = createAction(type.SIGN_IN, signinAPI);
+export const signin = createAction(types.SIGN_IN, signinAPI);
 
 export default handleActions({
     //비동기
