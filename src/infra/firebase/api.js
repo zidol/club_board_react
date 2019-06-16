@@ -12,6 +12,13 @@ export function signinWithGoogleAPI(email, password) {
     
 }
 
+export function signinWithFacebookAPI(email, password) {
+    var provider = new firebase.auth.FacebookAuthProvider();
+    console.log(provider);
+    return firebase.auth().signInWithPopup(provider);
+    
+}
+
 export function signoutAPI(){
     return firebase.auth().signOut();
 }

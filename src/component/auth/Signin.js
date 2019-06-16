@@ -16,6 +16,12 @@ class Signin extends Component {
         this.props.authActions.signinWithGoogle();
     }
 
+
+    onFacebookLogin = e => {
+        console.log("facebook login");
+        this.props.authActions.signinWithFacebook();
+    }
+
     onSignOut = e => {
         this.props.authActions.signout();
     }
@@ -25,6 +31,7 @@ class Signin extends Component {
         return (
             <div>
                 <button onClick={this.onGoogleLogin}>Google Login</button>
+                <button onClick={this.onFacebookLogin}>facebook Login</button>
                 <button onClick={this.onSignOut}>sign out</button>
                 <p>
                     {
