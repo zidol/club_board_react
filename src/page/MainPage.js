@@ -45,9 +45,10 @@ class MainPage extends Component {
     render() {
         return(
             <div>
-                <button onClick={this.onClickLogin}>login</button>
+                MainPage
+                {/* <button onClick={this.onClickLogin}>login</button>
                 <button onClick={this.onClickUsers}>users</button>
-                <button onClick={this.onClickLogout}>logout</button>
+                <button onClick={this.onClickLogout}>logout</button> */}
             </div>
         )
     }

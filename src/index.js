@@ -6,6 +6,7 @@ import {configureStore} from './module'
 import {Provider} from 'react-redux'
 import firebase from 'firebase'
 import * as authActions from './module/authReducer'
+import 'semantic-ui-css/semantic.min.css'
 
 const store = configureStore();
 
